@@ -23,7 +23,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: mevlana14/wait-ebn@v3.0.7
+        uses: mevlana14/wait-ebn@v3.0.8
         with:
           who-to-greet: 'Mona the Octocat'
       - name: Get the output time
