@@ -22,7 +22,7 @@ jobs:
           echo mevlana
       - name: Hello world action step
         id: hello
-        uses: mevlana14/wait-ebn@v3.0.12
+        uses: mevlana14/wait-ebn@v3.0.13
         with:
           ebn-id: 'e-peugiuzpne'
         env:
