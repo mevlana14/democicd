@@ -26,5 +26,10 @@ jobs:
         uses: mevlana14/wait-ebn@v3.0.10
         with:
           who-to-greet: 'Mona the Octocat'
+          ebn-id: 'xd d'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-2'
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
