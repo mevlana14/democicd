@@ -17,14 +17,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: placeholder
-        run: |
-          echo mevlana
       - name: Hello world action step
         id: hello
-        uses: mevlana14/wait-ebn@v3.0.15
+        uses: mevlana14/wait-ebn@v3.0.16
         with:
           ebn-id: 'e-peugiuzpne'
+          job-timeout: 300
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
